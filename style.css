@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    font-family: 'koHo';
 }
 
 body{
@@ -10,15 +13,66 @@ body{
 .container{
     width: 80%;
     margin: 0 auto;
+    height: 96vh;
+    position: relative;
 }
 
 .divPosts{
     width: 90%;
     height: 90%;
-    padding: 5%;
+    margin-top: 2vh;
+    padding: 2% 5%;
     background-color: #37383b;
     border-radius: 10px;
     color: #fafafa;
-    position: relative
+    overflow-y: auto;   
 }
 
+.divPosts div{
+    font-size: 10px;
+}
+
+.divPosts h2{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.divPosts p{
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #aaa8;
+    font-size: 16px;
+}       
+
+.ant, .prox{
+    font-size: 0px;
+    border: none;
+    width: 25px;
+    height: 51px;
+    padding: 30px 20px;
+    position: absolute;
+    opacity: 0.2;
+    bottom: 50%;
+    outline: none;
+}
+
+.ant{
+    left: 0;
+    background: url(./img/anterior.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.prox{
+    right: 0;
+    background: url(./img/proximo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ant:hover, .prox:hover{
+    opacity: .6;
+    transition: .5s;
+}
